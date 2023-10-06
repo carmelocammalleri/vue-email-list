@@ -7,5 +7,13 @@ createApp({
       emailDue: '',
       apriUrl: "https://flynn.boolean.careers/exercises/api/random/mail"
     }
+  },
+  methods:{
+    getApi(){
+      axios.get(this.apriUrl)
+      .then((risposta)=>{
+        console.log(risposta.data);
+      })
+    }
   }
 }).mount('#app')
