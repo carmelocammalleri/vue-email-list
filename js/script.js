@@ -10,11 +10,13 @@ createApp({
 
   methods:{
     getApi(){
-      axios.get(this.apriUrl)
-      .then((risposta)=>{
-        this.emails.push(risposta.data.response)
-        console.log(risposta.data.response);
+      for(let i=0; i<10; i++){
+        axios.get(this.apriUrl)
+        .then((risposta)=>{
+          this.emails.push(risposta.data.response)
+          console.log(risposta.data.response);
       })
+      }
     }
   },
 
