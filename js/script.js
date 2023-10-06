@@ -3,7 +3,9 @@ const {createApp} = Vue;
 createApp({
   data(){
     return{
-      emails: ''
+      emailUno: '',
+      emailDue: '',
+      apriUrl: "https://flynn.boolean.careers/exercises/api/random/mail"
     }
   }
 }).mount('#app')
