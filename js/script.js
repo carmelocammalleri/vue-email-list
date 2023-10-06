@@ -8,6 +8,7 @@ createApp({
       apriUrl: "https://flynn.boolean.careers/exercises/api/random/mail"
     }
   },
+
   methods:{
     getApi(){
       axios.get(this.apriUrl)
@@ -15,5 +16,9 @@ createApp({
         console.log(risposta.data);
       })
     }
+  },
+  
+  mounted(){
+    getApi()
   }
 }).mount('#app')
