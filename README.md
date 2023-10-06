@@ -9,7 +9,7 @@ Far comparire gli indirizzi email solamente quando sono stati tutti generati.
 
 
 1. generare un ciclo che gestisca la funzione random email
-2. creare una funzionerandom con l'Api
+2. creare una funzione random con l'Api
 3. Stampare su pagina
 
 <!-- BONUS 
